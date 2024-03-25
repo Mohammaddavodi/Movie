@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BluFilm" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.BluFilm" parent="Base.Theme.BluFilm" />
+    <style name="roundedImageRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="floating" parent="Widget.Design.FloatingActionButton">
+        <item name="android:foreground">@drawable/floating_background</item>
+    </style>
+</resources>
