@@ -168,8 +168,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_margin="5dp"
                 android:layout_weight="0.2"
-                android:src="@tools:sample/avatars"
-                app:srcCompat="@drawable/btn_4"
+                android:src="@drawable/btn_4"
                 app:tint="@color/white" />
 
             <ImageView
@@ -179,8 +178,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_margin="5dp"
                 android:layout_weight="0.2"
-                android:src="@tools:sample/avatars"
-                app:srcCompat="@drawable/btn_3"
+                android:src="@drawable/btn_3"
                 app:tint="@color/white" />
 
             <ImageView
@@ -189,9 +187,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.2"
-                android:src="@tools:sample/avatars"
                 android:visibility="invisible"
-                app:srcCompat="@drawable/btn_3"
+                android:src="@drawable/btn_3"
                 app:tint="@color/white" />
 
             <ImageView
@@ -201,8 +198,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_margin="5dp"
                 android:layout_weight="0.2"
-                android:src="@tools:sample/avatars"
-                app:srcCompat="@drawable/btn_2"
+                android:src="@drawable/btn_2"
                 app:tint="@color/white" />
 
             <ImageView
