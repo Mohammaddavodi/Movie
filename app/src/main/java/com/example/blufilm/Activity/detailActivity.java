@@ -1,14 +1,16 @@
-package com.example.blufilm;
+package com.example.blufilm.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class introActivity extends AppCompatActivity {
+import com.example.blufilm.R;
+
+public class detailActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intro);
+        setContentView(R.layout.activity_detail);
     }
 }
