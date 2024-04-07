@@ -8,7 +8,6 @@
         android:id="@+id/itemImages"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:src="@tools:sample/avatars"
         android:layout_margin="5dp"
         app:shapeAppearanceOverlay="@style/roundedImageview"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 
@@ -33,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         initview();
-        sendRequest2();
         sendRequest1();
+        sendRequest2();
 
     }
     private void initview(){
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
             adapterNewMovie=new FilmListAdapter(items);
             recyclerViewNewMovies.setAdapter(adapterNewMovie);
         }, error -> {
+            Log.i("error","send1:"+error.toString());
             Loading1.setVisibility(View.GONE);
         });
 mRequestQueue.add(mStringRequest);
