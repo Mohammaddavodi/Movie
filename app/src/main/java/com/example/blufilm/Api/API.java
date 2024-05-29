@@ -1,19 +1,51 @@
 // YApi QuickType插件生成，具体参考文档:https://plugins.jetbrains.com/plugin/18847-yapi-quicktype/documentation
 
-package com.example.blufilm.Activity;
+package com.example.blufilm.Api;
+import androidx.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+import androidx.room.TypeConverter;
+import androidx.room.TypeConverters;
+
+import java.util.Arrays;
 import java.util.List;
 
+
+@Entity(tableName = "favMovie")
 public class API {
+    @PrimaryKey
+    @NonNull
+    private String name;
+    @TypeConverters(StringListConverter.class)
     private List<String> actors;
     private String thumburl;
     private long year;
     private String imageurl;
+
+    @TypeConverters(StringListConverter.class)
     private List<String> directors;
+
+    @TypeConverters(StringListConverter.class)
     private List<String> genre;
-    private String name;
     private double rating;
     private String imdburl;
     private String desc;
+
+    public API(String name,String thumburl,List<String> actors,
+               long year, String imageurl,
+               List<String> directors,List<String> genre,
+               double rating, String imdburl, String desc) {
+        this.actors = actors;
+        this.thumburl = thumburl;
+        this.year = year;
+        this.imageurl = imageurl;
+        this.directors = directors;
+        this.genre = genre;
+        this.name = name;
+        this.rating = rating;
+        this.imdburl = imdburl;
+        this.desc = desc;
+    }
 
     public List<String> getActors() { return actors; }
     public void setActors(List<String> value) { this.actors = value; }

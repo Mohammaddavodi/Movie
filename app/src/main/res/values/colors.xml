@@ -5,4 +5,9 @@
     <color name="main_background">#19191b</color>
     <color name="pink">#e45eb0</color>
     <color name="green">#34e3c4</color>
+    <color name="colorPrimary">#E8C983</color>
+    <color name="colorPrimaryDark">#675B50</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="buttonText">#FFFFFF</color>
+    <color name="h1">#000000</color>
 </resources>

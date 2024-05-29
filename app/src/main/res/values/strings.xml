@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">bluFilm</string>
+    <string name="app_name">Bluefilm</string>
+    <string name="drawerOpen">Open Drawer</string>
+    <string name="drawerClose">Close Drawer</string>
+    <string name="ox_collective">Ox Collective</string>
+    <string name="description">Bluefilm is a program in Java language and for Amirkabir College created by Mohammad Davodabadi, this program has the task of showing the top 250 movies in the history of the world.</string>
+    <string name="address_1">Markazi Province</string>
+    <string name="address_2">Arak city
+ Moalem town</string>
+    <string name="address_3">Amirkabir Faculty</string>
+    <string name="oxcollective.com">Bluefilm.ir</string>
+    <string name="contact_us">contact us</string>
 </resources>

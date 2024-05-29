@@ -1,6 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="1dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginEnd="1dp"
+    android:layout_marginBottom="3dp"
+    android:background="@drawable/viewholderhorizantal"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        style="@style/roundedImageRounded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/picHorizantal"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nameMovieTvHolder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/vazirmatnregular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/genrsMovieTvHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/vazirmatnregular"
+        app:layout_constraintStart_toStartOf="@+id/nameMovieTvHolder"
+        app:layout_constraintTop_toBottomOf="@+id/nameMovieTvHolder" />
+
+    <TextView
+        android:id="@+id/movieDateTvHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_goneMarginTop="2dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/vazirmatnregular"
+        app:layout_constraintStart_toStartOf="@+id/genrsMovieTvHolder"
+        app:layout_constraintTop_toBottomOf="@+id/genrsMovieTvHolder" />
+
+
+    <TextView
+        android:id="@+id/movieRateTVHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        tools:layout_editor_absoluteX="272dp"
+        tools:layout_editor_absoluteY="98dp"
+        android:fontFamily="@font/vazirmatnregular"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6"
+        android:layout_marginTop="3dp"
+        />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/black"
+        android:text="|"
+        android:layout_marginBottom="2dp"
+        android:textFontWeight="@integer/material_motion_duration_long_2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/movieDateTvHolder"
+        app:layout_constraintEnd_toStartOf="@+id/movieRateTVHolder"
+        app:layout_constraintStart_toEndOf="@+id/movieDateTvHolder"
+        app:layout_constraintTop_toTopOf="@+id/movieDateTvHolder" />
+
+    <ImageView
+        android:id="@+id/favBtn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/like" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

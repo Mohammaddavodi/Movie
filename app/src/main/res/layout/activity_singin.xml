@@ -25,14 +25,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login in"
+                android:text="Singin"
                 android:textColor="@color/white"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="128dp"
                 android:textSize="50sp"
                 android:textStyle="bold"/>
             <EditText
-                android:id="@+id/edtUserName"
+                android:id="@+id/edtUserNameLogin"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="128dp"
@@ -48,7 +48,7 @@
                 android:background="@drawable/intro_btn_background"/>
 
             <EditText
-                android:id="@+id/edtPassword"
+                android:id="@+id/edtPasswordLogin"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="12dp"
@@ -62,19 +62,12 @@
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
                 android:background="@drawable/intro_btn_background"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Forget Your Password? "
-                android:textColor="@color/white"
-                android:textAlignment="center"
-                android:textStyle="italic"
-                android:textSize="20sp"/>
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/loginBtn"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="Login"
+                android:text="Singin"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
                 android:textSize="22sp"
@@ -87,18 +80,20 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Dont have an account>?"
+                android:text="have an account?"
                 android:layout_marginTop="32dp"
                 android:textColor="@color/white"
                 android:textAlignment="center"
                 android:textSize="20sp"/>
             <TextView
+                android:id="@+id/loginAccount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Register now "
+                android:text="Login now"
                 android:textColor="@color/white"
                 android:textAlignment="center"
                 android:textSize="20sp"/>
+
             
         </LinearLayout>
     </ScrollView>
