@@ -38,22 +38,6 @@ public class infoActivity extends AppCompatActivity {
                                     .putExtra(Intent.EXTRA_SUBJECT,"contract for details")
                                             .putExtra(Intent.EXTRA_TEXT,"");
                     startActivity(intent);
-//                    AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext());
-//                    builder.setTitle("Choose an animal");
-//                    String[] animals = {"horse", "cow", "camel", "sheep", "goat"};
-//                    builder.setItems(animals, new DialogInterface.OnClickListener() {
-//                        @Override
-//                        public void onClick(DialogInterface dialog, int which) {
-//                            switch (which) {
-//                                case 0: // horse
-//                                case 1: // cow
-//                                case 2: // camel
-//                                case 3: // sheep
-//                                case 4: // goat
-//                            }
-//                        }
-//
-//                    });
         }
         );
         ImageView backImg=(ImageView)findViewById(R.id.backImg);
